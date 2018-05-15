@@ -95,4 +95,42 @@ public class MyBatisTest {
 
     }
 
+    @Test
+    public void testCRUD(){
+
+        //获取Sqlsession对象,使用的openSession不带参数，不会自动提交
+        SqlSession openSession = sqlSessionFactory.openSession(true) ;
+
+        try {
+            EmployeeMapper employeeMapper = openSession.getMapper(EmployeeMapper.class) ;
+
+            //查找
+            //Employee employee = employeeMapper.getEmpById(1) ;
+            //System.out.println(employee);
+
+            //增加
+//            Employee employee = new Employee("hhh","hhh@qq.com","女") ;
+//            System.out.println(employee);
+//            employeeMapper.addEmp(employee);
+//            System.out.println(employee);
+
+            //修改
+//            Employee employee = new Employee(1,"hgx_1","hgx_1@qq.com","男") ;
+//            employeeMapper.updateEmp(employee);
+
+            //删除
+//                employeeMapper.deleteEmpById(2);
+            //手动提交数据
+            //openSession.commit();
+
+            Employee e = employeeMapper.getEmpByIDAndName(1,"hgx_1") ;
+            System.out.println(e);
+        }finally {
+            openSession.close();
+        }
+
+
+
+    }
+
 }

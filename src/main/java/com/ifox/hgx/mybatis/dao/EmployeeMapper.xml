@@ -17,4 +17,25 @@
            select * from tab_employee where id = #{id}
     </select>
 
+    <!--增加 parameterType可省略-->
+    <insert id="addEmp" parameterType="com.ifox.hgx.mybatis.entities.Employee"  useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO tab_employee(last_name, gender, email) VALUES(#{lastName},#{gender},#{email})
+    </insert>
+
+    <!--更新-->
+    <update id="updateEmp">
+        UPDATE tab_employee SET last_name=#{lastName},email=#{email},gender=#{gender} WHERE  id = #{id}
+    </update>
+
+    <!--删除-->
+    <delete id="deleteEmpById">
+        DELETE FROM tab_employee WHERE id = #{id}
+    </delete>
+
+    <!--通过id和lastName查询-->
+
+    <select id="getEmpByIDAndName" resultType="employee">
+        SELECT * FROM tab_employee WHERE id=#{id} AND last_name=#{lastName}
+    </select>
+
 </mapper>
