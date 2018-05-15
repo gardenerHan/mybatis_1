@@ -4,6 +4,18 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <properties resource="dbconfig.properties"></properties>
+    <settings>
+        <!--开启动驼峰命名规则（camel case）映射-->
+        <!--注意name属性里面空格都不能有，否则找不到该属性-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+    <!--类型别名是为 Java 类型设置一个短的名字。它只和 XML 配置有关，存在的意义仅在于用来减少类完全限定名的冗余-->
+    <typeAliases>
+        <!--<typeAlias alias="employee" type="com.ifox.hgx.mybatis.entities.Employee"></typeAlias>-->
+        <package name="com.ifox.hgx.mybatis.entities"></package>
+    </typeAliases>
+
     <environments default="development">
         <environment id="development">
             <transactionManager type="JDBC"/>
@@ -14,8 +26,23 @@
                 <property name="password" value="${jdbc.password}"/>
             </dataSource>
         </environment>
+        <environment id="test">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
     </environments>
+
+
     <mappers>
-        <mapper resource="EmployeeMapper.xml"/>
+        <!--<mapper resource="EmployeeMapper.xml"/>-->
+        <!--<mapper class="com.ifox.hgx.mybatis.dao.EmployeeMapperAnnotation"></mapper>-->
+        <mapper class="com.ifox.hgx.mybatis.dao.EmployeeMapper"></mapper>
+
+        <!--<package name="com.ifox.hgx.mybatis.dao"></package>-->
     </mappers>
 </configuration>
