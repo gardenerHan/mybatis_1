@@ -51,6 +51,7 @@
         <!--<mapper resource="EmployeeMapper.xml"/>-->
         <!--<mapper class="com.ifox.hgx.mybatis.dao.EmployeeMapperAnnotation"></mapper>-->
         <mapper class="com.ifox.hgx.mybatis.dao.EmployeeMapper"></mapper>
+        <mapper class="com.ifox.hgx.mybatis.dao.EmployeeMapperPlus"></mapper>
 
         <!--<package name="com.ifox.hgx.mybatis.dao"></package>-->
     </mappers>

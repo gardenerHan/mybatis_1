@@ -2,6 +2,7 @@ package com.ifox.hgx.mybatis.test;
 
 import com.ifox.hgx.mybatis.dao.EmployeeMapper;
 import com.ifox.hgx.mybatis.dao.EmployeeMapperAnnotation;
+import com.ifox.hgx.mybatis.dao.EmployeeMapperPlus;
 import com.ifox.hgx.mybatis.entities.Employee;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -13,12 +14,13 @@ import org.junit.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.List;
+import java.util.Map;
 
 public class MyBatisTest {
 
 
-
-    private  SqlSessionFactory sqlSessionFactory ;
+    private SqlSessionFactory sqlSessionFactory;
 
 
     @Before
@@ -32,14 +34,14 @@ public class MyBatisTest {
     @Test
     public void test1() throws IOException {
         //获取Sqlsession实例，能直接执行已经映射的sql语句
-        SqlSession openSession = sqlSessionFactory.openSession() ;
+        SqlSession openSession = sqlSessionFactory.openSession();
 
         try {
-            Employee employee =  openSession.selectOne("com.ifox.hgx.mybatis.dao.EmployeeMapper.getEmpById",1) ;
+            Employee employee = openSession.selectOne("com.ifox.hgx.mybatis.dao.EmployeeMapper.getEmpById", 1);
 
             System.out.println(employee);
 
-        }finally {
+        } finally {
             openSession.close();
         }
     }
@@ -50,19 +52,17 @@ public class MyBatisTest {
 
 
         //获取sqlSession对象
-        SqlSession openSession = sqlSessionFactory.openSession() ;
+        SqlSession openSession = sqlSessionFactory.openSession();
 
         try {
             //获取接口的实现类对象
-            EmployeeMapper employeeMapper = openSession.getMapper(EmployeeMapper.class) ;
+            EmployeeMapper employeeMapper = openSession.getMapper(EmployeeMapper.class);
 
-            Employee employee =  employeeMapper.getEmpById(1) ;
+            Employee employee = employeeMapper.getEmpById(1);
 
             System.out.println(employeeMapper.getClass());
             System.out.println(employee);
-        }
-
-        finally {
+        } finally {
             openSession.close();
         }
 
@@ -76,19 +76,17 @@ public class MyBatisTest {
 
 
         //获取sqlSession对象
-        SqlSession openSession = sqlSessionFactory.openSession() ;
+        SqlSession openSession = sqlSessionFactory.openSession();
 
         try {
             //获取接口的实现类对象
-            EmployeeMapperAnnotation employeeMapperAnnotation = openSession.getMapper(EmployeeMapperAnnotation.class) ;
+            EmployeeMapperAnnotation employeeMapperAnnotation = openSession.getMapper(EmployeeMapperAnnotation.class);
 
-            Employee employee =  employeeMapperAnnotation.getEmpById(1) ;
+            Employee employee = employeeMapperAnnotation.getEmpById(1);
 
             System.out.println(employeeMapperAnnotation.getClass());
             System.out.println(employee);
-        }
-
-        finally {
+        } finally {
             openSession.close();
         }
 
@@ -96,13 +94,13 @@ public class MyBatisTest {
     }
 
     @Test
-    public void testCRUD(){
+    public void testCRUD() {
 
         //获取Sqlsession对象,使用的openSession不带参数，不会自动提交
-        SqlSession openSession = sqlSessionFactory.openSession(true) ;
+        SqlSession openSession = sqlSessionFactory.openSession(true);
 
         try {
-            EmployeeMapper employeeMapper = openSession.getMapper(EmployeeMapper.class) ;
+            EmployeeMapper employeeMapper = openSession.getMapper(EmployeeMapper.class);
 
             //查找
             //Employee employee = employeeMapper.getEmpById(1) ;
@@ -123,14 +121,39 @@ public class MyBatisTest {
             //手动提交数据
             //openSession.commit();
 
-            Employee e = employeeMapper.getEmpByIDAndName(1,"hgx_1") ;
-            System.out.println(e);
-        }finally {
+            //测试 $ 作用
+//            Employee e = employeeMapper.getEmpByIDAndName(1,"hgx_1","tab_employee") ;
+
+            //select 返回对象集合
+//            List<Employee> list = employeeMapper.getEmpsByLastName("%h%");
+//            for (Employee e : list
+//                    ) {
+//                System.out.println("查询结果:"+e);
+//            }
+
+
+          //  Map<String,Object> e = employeeMapper.getEmpByIdReturnMap(1) ;
+            Map<Integer,Employee> e = employeeMapper.getEmpByLastNameReturnMap("%h%") ;
+
+          System.out.println(e);
+            System.out.println(e.get(3));
+        } finally {
             openSession.close();
         }
 
 
+    }
 
+    @Test
+    public void testMapperPlus(){
+        SqlSession openSession = sqlSessionFactory.openSession(true) ;
+        try {
+            EmployeeMapperPlus mapperPlus = openSession.getMapper(EmployeeMapperPlus.class) ;
+            Employee employee = mapperPlus.getEmpById(1) ;
+            System.out.println(employee);
+        }finally {
+            openSession.close();
+        }
     }
 
 }

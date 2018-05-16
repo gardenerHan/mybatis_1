@@ -19,7 +19,7 @@
 
     <!--增加 parameterType可省略-->
     <insert id="addEmp" parameterType="com.ifox.hgx.mybatis.entities.Employee"  useGeneratedKeys="true" keyProperty="id">
-        INSERT INTO tab_employee(last_name, gender, email) VALUES(#{lastName},#{gender},#{email})
+        INSERT INTO tab_employee(last_name, gender, email) VALUES(#{lastName},#{gender},#{email,jdbcType=NULL})
     </insert>
 
     <!--更新-->
@@ -35,7 +35,20 @@
     <!--通过id和lastName查询-->
 
     <select id="getEmpByIDAndName" resultType="employee">
-        SELECT * FROM tab_employee WHERE id=#{id} AND last_name=#{lastName}
+        SELECT * FROM ${tableName} WHERE id=#{id} AND last_name=#{lastName}
     </select>
 
+    <!--通过lastName查询 返回Employee集合-->
+    <select id="getEmpsByLastName" resultType="employee">
+        SELECT * FROM tab_employee WHERE last_name LIKE #{lastName}
+    </select>
+
+    <!---->
+    <select id="getEmpByIdReturnMap" resultType="map">
+        SELECT * FROM tab_employee WHERE id=#{id}
+    </select>
+
+    <select id="getEmpByLastNameReturnMap" resultType="employee">
+        SELECT * FROM tab_employee WHERE last_name LIKE #{lastName}
+    </select>
 </mapper>
