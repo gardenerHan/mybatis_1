@@ -50,5 +50,6 @@
 
     <select id="getEmpByLastNameReturnMap" resultType="employee">
         SELECT * FROM tab_employee WHERE last_name LIKE #{lastName}
+
     </select>
 </mapper>

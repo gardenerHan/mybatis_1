@@ -1,8 +1,10 @@
 package com.ifox.hgx.mybatis.test;
 
+import com.ifox.hgx.mybatis.dao.DepartmentMapper;
 import com.ifox.hgx.mybatis.dao.EmployeeMapper;
 import com.ifox.hgx.mybatis.dao.EmployeeMapperAnnotation;
 import com.ifox.hgx.mybatis.dao.EmployeeMapperPlus;
+import com.ifox.hgx.mybatis.entities.Department;
 import com.ifox.hgx.mybatis.entities.Employee;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -151,6 +153,51 @@ public class MyBatisTest {
             EmployeeMapperPlus mapperPlus = openSession.getMapper(EmployeeMapperPlus.class) ;
             Employee employee = mapperPlus.getEmpById(1) ;
             System.out.println(employee);
+        }finally {
+            openSession.close();
+        }
+    }
+
+    @Test
+    public void testEmpAndDept(){
+        SqlSession openSession  = sqlSessionFactory.openSession() ;
+        try {
+            EmployeeMapperPlus mapperPlus = openSession.getMapper(EmployeeMapperPlus.class) ;
+            Employee employee = mapperPlus.getEmpAndDept(5) ;
+            System.out.println(employee);
+        }finally {
+            openSession.close();
+        }
+
+    }
+
+    @Test
+    public  void testGetEmpAndDeptByStep(){
+        SqlSession openSession  = sqlSessionFactory.openSession() ;
+        try {
+            EmployeeMapperPlus mapperPlus = openSession.getMapper(EmployeeMapperPlus.class) ;
+            Employee employee = mapperPlus.getEmpAndDeptByStep(3) ;
+//            System.out.println(employee);
+            System.out.println(employee.getLastName());
+            System.out.println(employee.getDept());
+        }finally {
+
+            openSession.close();
+
+            // Mapped Statements collection does not contain value for ...
+            //注意在全局配置中注册mapper。
+
+        }
+    }
+
+    @Test
+    public void testGetDeptPlus(){
+        SqlSession openSession = sqlSessionFactory.openSession(true) ;
+        try {
+            DepartmentMapper departmentMapper = openSession.getMapper(DepartmentMapper.class) ;
+            Department department = departmentMapper.getDeptPlus(1) ;
+            System.out.println(department);
+            System.out.println(department.getEmps());
         }finally {
             openSession.close();
         }

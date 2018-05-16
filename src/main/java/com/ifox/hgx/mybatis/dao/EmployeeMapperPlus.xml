@@ -6,9 +6,65 @@
 
 <mapper namespace="com.ifox.hgx.mybatis.dao.EmployeeMapperPlus">
 
+    <resultMap id="myEmp" type="employee">
+        <id column="id" property="id"></id>
+        <result column="last_name" property="lastName"></result>
+        <result column="email" property="email"></result>
+        <result column="gender" property="gender"></result>
+    </resultMap>
 
-    <select id="getEmpById" resultType="employee">
+    <resultMap id="EmpAndDept" type="employee">
+        <id column="id" property="id"></id>
+        <result column="last_name" property="lastName"></result>
+        <result column="email" property="email"></result>
+        <result column="did" property="dept.id"></result>
+        <result column="dept_name" property="dept.deptName"></result>
+    </resultMap>
+    <resultMap id="EmpAndDept_1" type="employee">
+        <id column="id" property="id"></id>
+        <result column="last_name" property="lastName"></result>
+        <result column="email" property="email"></result>
+        <result column="dept_id" property="dept.id"></result>
+        <result column="dept_name" property="dept.deptName"></result>
+    </resultMap>
+    <!--association這種方式必須指定完所有的column和property对应-->
+    <resultMap id="EmpAndDept_a" type="employee">
+        <id column="id" property="id"></id>
+        <result column="last_name" property="lastName"></result>
+        <result column="email" property="email"></result>
+       <result column="gender" property="gender"></result>
+        <association property="dept" javaType="department">
+            <id column="dept_id" property="id"></id>
+            <result column="dept_name" property="deptName"></result>
+        </association>
+    </resultMap>
+
+    <select id="getEmpById" resultMap="myEmp">
         SELECT * FROM tab_employee WHERE id=#{id}
+    </select>
+
+    <select id="getEmpAndDept" resultMap="EmpAndDept_a">
+     SELECT * FROM tab_employee e,tab_dept d WHERE e.dept_id = d.id AND e.id = #{id}
+     </select>
+
+    <!--
+    SELECT e.id id, e.last_name last_name,e.email email,e.gender gender,e.dept_id d_id,d.id did,d.dept_name dept_name
+      FROM tab_employee e ,tab_dept d WHERE e.dept_id=d.id AND e.id = #{id}
+    -->
+
+    <!--使用association分步查询-->
+    <resultMap id="empAndDeptByStep" type="employee">
+        <id column="id" property="id"></id>
+        <result column="last_name" property="lastName"></result>
+        <result column="email" property="email"></result>
+        <result column="gender" property="gender"></result>
+
+        <association property="dept" select="com.ifox.hgx.mybatis.dao.DepartmentMapper.getDept" column="dept_id">
+        </association>
+    </resultMap>
+    
+    <select id="getEmpAndDeptByStep" resultMap="empAndDeptByStep">
+      SELECT * FROM tab_employee WHERE id = #{id}
     </select>
 </mapper>
 

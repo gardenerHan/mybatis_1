@@ -8,7 +8,11 @@
         <!--开启动驼峰命名规则（camel case）映射-->
         <!--注意name属性里面空格都不能有，否则找不到该属性-->
         <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <setting name="jdbcTypeForNull" value="NULL"></setting>
 
+        <!--延迟加载(按需加载)-->
+        <setting name="lazyLoadingEnabled" value="true"></setting>
+        <setting name="aggressiveLazyLoading" value="false"></setting>
     </settings>
 
     <!--类型别名是为 Java 类型设置一个短的名字。它只和 XML 配置有关，存在的意义仅在于用来减少类完全限定名的冗余-->
@@ -52,6 +56,7 @@
         <!--<mapper class="com.ifox.hgx.mybatis.dao.EmployeeMapperAnnotation"></mapper>-->
         <mapper class="com.ifox.hgx.mybatis.dao.EmployeeMapper"></mapper>
         <mapper class="com.ifox.hgx.mybatis.dao.EmployeeMapperPlus"></mapper>
+        <mapper class="com.ifox.hgx.mybatis.dao.DepartmentMapper"></mapper>
 
         <!--<package name="com.ifox.hgx.mybatis.dao"></package>-->
     </mappers>
