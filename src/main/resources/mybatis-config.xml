@@ -20,6 +20,7 @@
         <!--<typeAlias alias="employee" type="com.ifox.hgx.mybatis.entities.Employee"></typeAlias>-->
         <package name="com.ifox.hgx.mybatis.entities"></package>
 
+
     </typeAliases>
 
     <environments default="development">
@@ -57,6 +58,7 @@
         <mapper class="com.ifox.hgx.mybatis.dao.EmployeeMapper"></mapper>
         <mapper class="com.ifox.hgx.mybatis.dao.EmployeeMapperPlus"></mapper>
         <mapper class="com.ifox.hgx.mybatis.dao.DepartmentMapper"></mapper>
+        <mapper class="com.ifox.hgx.mybatis.dao.EmployeeMapperDynamicSQL"></mapper>
 
         <!--<package name="com.ifox.hgx.mybatis.dao"></package>-->
     </mappers>

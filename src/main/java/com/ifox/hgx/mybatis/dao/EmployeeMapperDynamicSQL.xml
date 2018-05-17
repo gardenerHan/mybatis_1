@@ -12,7 +12,42 @@
         trim (where, set)
         foreach
     -->
-
+    <select id="getEmpsByConditionIf" resultType="Employee">
+        SELECT * FROM tab_employee
+        <where>
+        <if test="id != null">
+            AND id = #{id}
+        </if>
+        <if test="lastName != null and lastName !='' ">
+            AND last_name like #{lastName}
+        </if>
+        <if test="email != null and email.trim() != '' ">
+            and email=#{email}
+        </if>
+        <if test="gender =='男' or gender == '女' ">
+            and gender=#{gender}
+        </if>
+        </where>
+    </select>
+    
+    
+    <select id="getEmpsByConditionTrim" resultType="Employee">
+         SELECT * FROM tab_employee
+         <trim prefix="where" suffixOverrides="and">
+             <if test="id != null">
+                  id = #{id} and
+             </if>
+             <if test="lastName != null and lastName !='' ">
+                  last_name like #{lastName} AND
+             </if>
+             <if test="email != null and email.trim() != '' ">
+                  email=#{email} AND
+             </if>
+             <if test="gender =='男' or gender == '女' ">
+                  gender=#{gender} AND
+             </if>
+         </trim>
+    </select>
 
 
 </mapper>

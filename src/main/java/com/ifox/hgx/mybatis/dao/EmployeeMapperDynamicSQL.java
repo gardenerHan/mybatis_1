@@ -1,5 +1,10 @@
 package com.ifox.hgx.mybatis.dao;
 
-public interface EmployeeMapperDynamicSQL {
+import com.ifox.hgx.mybatis.entities.Employee;
 
+import java.util.List;
+
+public interface EmployeeMapperDynamicSQL {
+    List<Employee> getEmpsByConditionIf(Employee employee) ;
+    List<Employee> getEmpsByConditionTrim(Employee employee) ;
 }
