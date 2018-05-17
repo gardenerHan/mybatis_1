@@ -203,4 +203,17 @@ public class MyBatisTest {
         }
     }
 
+    @Test
+    public void testGetDeptAndEmpStep(){
+        SqlSession openSession = sqlSessionFactory.openSession(true) ;
+        try {
+            DepartmentMapper departmentMapper = openSession.getMapper(DepartmentMapper.class) ;
+            Department department =  departmentMapper.getDeptAndEmpStep(1) ;
+            System.out.println(department.getDeptName());
+            System.out.println(department.getEmps());
+        }finally {
+            openSession.close();
+        }
+    }
+
 }

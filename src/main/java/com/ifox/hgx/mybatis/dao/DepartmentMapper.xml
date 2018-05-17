@@ -32,5 +32,14 @@
          FROM tab_dept d LEFT JOIN tab_employee e ON d.id = e.dept_id WHERE d.id=#{id}
     </select>
 
+    <resultMap id="deptAndEmpsStep" type="department">
+        <id column="id" property="id"></id>
+        <result column="dept_name" property="deptName"></result>
+        <collection property="emps" select="com.ifox.hgx.mybatis.dao.EmployeeMapperPlus.getEmpsByDeptId" column="id"></collection>
+    </resultMap>
+    <select id="getDeptAndEmpStep" resultMap="deptAndEmpsStep">
+        SELECT * FROM tab_dept WHERE id=#{id}
+    </select>
+
 </mapper>
 

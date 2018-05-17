@@ -59,12 +59,24 @@
         <result column="email" property="email"></result>
         <result column="gender" property="gender"></result>
 
-        <association property="dept" select="com.ifox.hgx.mybatis.dao.DepartmentMapper.getDept" column="dept_id">
+        <!--fetchType="lazy" 懒加载-->
+        <association property="dept" select="com.ifox.hgx.mybatis.dao.DepartmentMapper.getDept"
+                     column="dept_id" fetchType="lazy">
         </association>
     </resultMap>
     
     <select id="getEmpAndDeptByStep" resultMap="empAndDeptByStep">
       SELECT * FROM tab_employee WHERE id = #{id}
     </select>
+
+    <select id="getEmpsByDeptId" resultType="Employee">
+        SELECT * FROM tab_employee WHERE dept_id=#{id}
+    </select>
+
+    <!--<resultMap id="we" type="Employee">-->
+        <!--<discriminator javaType="String" column="gender">-->
+            <!--<case value="男"></case>-->
+        <!--</discriminator>-->
+    <!--</resultMap>-->
 </mapper>
 
