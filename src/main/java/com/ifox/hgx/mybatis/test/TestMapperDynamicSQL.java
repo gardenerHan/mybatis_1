@@ -37,7 +37,8 @@ public class TestMapperDynamicSQL {
 
             employee.setLastName("%h%") ;
            // List list = mapperDynamicSQL.getEmpsByConditionIf(employee) ;
-            List list = mapperDynamicSQL.getEmpsByConditionTrim(employee) ;
+           // List list = mapperDynamicSQL.getEmpsByConditionTrim(employee) ;
+            List list = mapperDynamicSQL.getEmpsByConditionChoose(employee) ;
             System.out.println(list);
         }finally {
             openSession.close();

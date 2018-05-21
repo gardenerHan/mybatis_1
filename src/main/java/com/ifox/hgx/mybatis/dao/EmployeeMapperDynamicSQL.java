@@ -7,4 +7,5 @@ import java.util.List;
 public interface EmployeeMapperDynamicSQL {
     List<Employee> getEmpsByConditionIf(Employee employee) ;
     List<Employee> getEmpsByConditionTrim(Employee employee) ;
+    List<Employee> getEmpsByConditionChoose(Employee employee) ;
 }

@@ -5,7 +5,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ifox/hgx/mybatis/dao/EmployeeMapperDynamicSQL.java" afterPath="$PROJECT_DIR$/src/main/java/com/ifox/hgx/mybatis/dao/EmployeeMapperDynamicSQL.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ifox/hgx/mybatis/dao/EmployeeMapperDynamicSQL.xml" afterPath="$PROJECT_DIR$/src/main/java/com/ifox/hgx/mybatis/dao/EmployeeMapperDynamicSQL.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ifox/hgx/mybatis/test/TestMapperDynamicSQL.java" afterPath="$PROJECT_DIR$/src/main/java/com/ifox/hgx/mybatis/test/TestMapperDynamicSQL.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,28 +48,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="EmployeeMapperDynamicSQL.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EmployeeMapperDynamicSQL.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ifox/hgx/mybatis/dao/EmployeeMapperDynamicSQL.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="46" column="38" lean-forward="false" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+            <state relative-caret-position="353">
+              <caret line="89" column="10" lean-forward="true" selection-start-line="89" selection-start-column="10" selection-end-line="89" selection-end-column="10" />
               <folding>
-                <marker date="1526564262005" expanded="true" signature="410:436" ph="SELECT * FRO... tab_employee" />
-                <marker date="1526564262005" expanded="true" signature="410:580" ph="SELECT * FRO... tab_employee" />
-                <marker date="1526564262005" expanded="true" signature="410:623" ph="SELECT * FRO... tab_employee" />
-                <marker date="1526564262005" expanded="true" signature="410:695" ph="SELECT * FRO... tab_employee" />
-                <marker date="1526564262005" expanded="true" signature="410:726" ph="SELECT * FRO... tab_employee" />
-                <marker date="1526564262005" expanded="true" signature="952:978" ph="SELECT * FRO... tab_employee" />
+                <marker date="1526871741409" expanded="true" signature="410:436" ph="SELECT * FRO... tab_employee" />
+                <marker date="1526871741409" expanded="true" signature="1587:1614" ph="SELECT * FRO... tab_employee" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestMapperDynamicSQL.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestMapperDynamicSQL.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ifox/hgx/mybatis/test/TestMapperDynamicSQL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="39" column="75" lean-forward="false" selection-start-line="39" selection-start-column="75" selection-end-line="39" selection-end-column="75" />
+            <state relative-caret-position="279">
+              <caret line="41" column="37" lean-forward="true" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,8 +76,8 @@
       <file leaf-file-name="EmployeeMapperDynamicSQL.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ifox/hgx/mybatis/dao/EmployeeMapperDynamicSQL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="41" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="41" />
+            <state relative-caret-position="216">
+              <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,6 +104,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>put</find>
+      <find>fragment</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -142,8 +139,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ifox/hgx/mybatis/dao/EmployeeMapperPlus.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ifox/hgx/mybatis/dao/EmployeeMapperDynamicSQL.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ifox/hgx/mybatis/dao/EmployeeMapperDynamicSQL.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ifox/hgx/mybatis/test/TestMapperDynamicSQL.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ifox/hgx/mybatis/dao/EmployeeMapperDynamicSQL.xml" />
       </list>
     </option>
   </component>
@@ -170,8 +167,8 @@
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="432" />
-    <option name="y" value="47" />
+    <option name="x" value="290" />
+    <option name="y" value="52" />
     <option name="width" value="1411" />
     <option name="height" value="980" />
   </component>
@@ -183,12 +180,33 @@
             <id />
           </State>
           <State>
-            <id>JSP Inspections</id>
+            <id>Android &gt; Lint &gt; Correctness</id>
+          </State>
+          <State>
+            <id>Android Lint for Kotlin</id>
+          </State>
+          <State>
+            <id>Internationalization issuesJava</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Probable bugsJava</id>
+          </State>
+          <State>
+            <id>Resource management issuesJava</id>
+          </State>
+          <State>
+            <id>SQL</id>
+          </State>
+          <State>
+            <id>Security issuesJava</id>
           </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>ReferencesToClassesFromDefaultPackagesInJSPFile</id>
+            <id>SQL</id>
           </State>
         </selected-state>
       </profile-state>
@@ -212,6 +230,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -280,15 +300,13 @@
       </pane>
       <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="SQL Dialects" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.5027574" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
@@ -566,23 +584,13 @@
       <workItem from="1526457911287" duration="7905000" />
       <workItem from="1526468879217" duration="110000" />
       <workItem from="1526469054199" duration="10887000" />
-      <workItem from="1526530917788" duration="6343000" />
+      <workItem from="1526530917788" duration="6471000" />
+      <workItem from="1526864217254" duration="3679000" />
+      <workItem from="1526869627981" duration="1774000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyBatisTest_testGetDeptAndEmpStep - 2018.05.17 at 12h 38m 33s.xml">
-      <configuration name="MyBatisTest.testGetDeptAndEmpStep" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyBatisTest_testGetDeptAndEmpStep - 2018.05.17 at 12h 39m 14s.xml">
-      <configuration name="MyBatisTest.testGetDeptAndEmpStep" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyBatisTest_testGetDeptAndEmpStep - 2018.05.17 at 12h 41m 48s.xml">
-      <configuration name="MyBatisTest.testGetDeptAndEmpStep" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestMapperDynamicSQL_testGetEmpsByConditionIf - 2018.05.17 at 21h 23m 11s.xml">
-      <configuration name="TestMapperDynamicSQL.testGetEmpsByConditionIf" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestMapperDynamicSQL_testGetEmpsByConditionIf - 2018.05.17 at 21h 24m 19s.xml">
       <configuration name="TestMapperDynamicSQL.testGetEmpsByConditionIf" configurationId="JUnit" />
     </history-entry>
@@ -601,12 +609,24 @@
     <history-entry file="TestMapperDynamicSQL_testGetEmpsByConditionIf - 2018.05.17 at 21h 28m 34s.xml">
       <configuration name="TestMapperDynamicSQL.testGetEmpsByConditionIf" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestMapperDynamicSQL_testGetEmpsByConditionIf - 2018.05.17 at 21h 38m 47s.xml">
+      <configuration name="TestMapperDynamicSQL.testGetEmpsByConditionIf" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestMapperDynamicSQL_testGetEmpsByConditionIf - 2018.05.21 at 09h 15m 51s.xml">
+      <configuration name="TestMapperDynamicSQL.testGetEmpsByConditionIf" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestMapperDynamicSQL_testGetEmpsByConditionIf - 2018.05.21 at 09h 16m 14s.xml">
+      <configuration name="TestMapperDynamicSQL.testGetEmpsByConditionIf" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestMapperDynamicSQL_testGetEmpsByConditionIf - 2018.05.21 at 11h 02m 38s.xml">
+      <configuration name="TestMapperDynamicSQL.testGetEmpsByConditionIf" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62537000" />
+    <option name="totallyTimeSpent" value="68118000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1551" height="839" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -620,11 +640,11 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289941" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45426357" sideWeight="0.49785408" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42945737" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45325443" sideWeight="0.49785408" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31597632" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28696826" sideWeight="0.49382716" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2274678" sideWeight="0.49382716" order="0" side_tool="false" content_ui="combo" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16630901" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -632,7 +652,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22156653" sideWeight="0.50617284" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -674,9 +694,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -853,23 +871,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/1.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ifox/hgx/mybatis/dao/EmployeeMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="53" column="13" lean-forward="true" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
-          <folding>
-            <marker date="1526470075093" expanded="true" signature="585:628" ph="select * fro... tab_employee" />
-            <marker date="1526470075093" expanded="true" signature="805:908" ph="INSERT INTO tab_employee... " />
-            <marker date="1526470075093" expanded="true" signature="974:1069" ph="UPDATE tab_e... " />
-            <marker date="1526470075093" expanded="true" signature="1139:1180" ph="DELETE FROM " />
-            <marker date="1526470075093" expanded="true" signature="1290:1357" ph="SELECT * FRO... tab_employee" />
-            <marker date="1526470075093" expanded="true" signature="1476:1535" ph="SELECT * FRO... tab_employee" />
-            <marker date="1526470075093" expanded="true" signature="1626:1667" ph="SELECT * FRO... tab_employee" />
-            <marker date="1526470075093" expanded="true" signature="1757:1816" ph="SELECT * FRO... tab_employee" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ifox/hgx/mybatis/dao/EmployeeMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
@@ -898,19 +899,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ifox/hgx/mybatis/dao/DepartmentMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="34" column="34" lean-forward="false" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="34" />
-          <folding>
-            <marker date="1526531855284" expanded="true" signature="288:327" ph="SELECT * FRO... tab_dept" />
-            <marker date="1526531855284" expanded="true" signature="1224:1427" ph="SELECT d.id tab_dept" />
-            <marker date="1526531855284" expanded="true" signature="1827:1864" ph="SELECT * FRO... tab_dept" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -919,7 +907,7 @@
         <state relative-caret-position="336">
           <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -928,7 +916,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="545">
           <caret line="47" column="32" lean-forward="false" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -944,7 +931,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1583">
           <caret line="110" column="19" lean-forward="false" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1001,10 +987,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ifox/hgx/mybatis/dao/DepartmentMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="41" column="13" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+          <folding>
+            <marker date="1526531855284" expanded="true" signature="288:327" ph="SELECT * FRO... tab_dept" />
+            <marker date="1526531855284" expanded="true" signature="1224:1427" ph="SELECT d.id tab_dept" />
+            <marker date="1526531855284" expanded="true" signature="1827:1864" ph="SELECT * FRO... tab_dept" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ifox/hgx/mybatis/dao/EmployeeMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+          <folding>
+            <marker date="1526470075093" expanded="true" signature="585:628" ph="select * fro... tab_employee" />
+            <marker date="1526470075093" expanded="true" signature="805:908" ph="INSERT INTO tab_employee... " />
+            <marker date="1526470075093" expanded="true" signature="974:1069" ph="UPDATE tab_e... " />
+            <marker date="1526470075093" expanded="true" signature="1139:1180" ph="DELETE FROM " />
+            <marker date="1526470075093" expanded="true" signature="1290:1357" ph="SELECT * FRO... tab_employee" />
+            <marker date="1526470075093" expanded="true" signature="1476:1535" ph="SELECT * FRO... tab_employee" />
+            <marker date="1526470075093" expanded="true" signature="1626:1667" ph="SELECT * FRO... tab_employee" />
+            <marker date="1526470075093" expanded="true" signature="1757:1816" ph="SELECT * FRO... tab_employee" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ifox/hgx/mybatis/dao/EmployeeMapperDynamicSQL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="41" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="41" />
+        <state relative-caret-position="216">
+          <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ifox/hgx/mybatis/test/TestMapperDynamicSQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="41" column="37" lean-forward="true" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1013,25 +1038,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ifox/hgx/mybatis/dao/EmployeeMapperDynamicSQL.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="46" column="38" lean-forward="false" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+        <state relative-caret-position="353">
+          <caret line="89" column="10" lean-forward="true" selection-start-line="89" selection-start-column="10" selection-end-line="89" selection-end-column="10" />
           <folding>
-            <marker date="1526564262005" expanded="true" signature="410:436" ph="SELECT * FRO... tab_employee" />
-            <marker date="1526564262005" expanded="true" signature="410:580" ph="SELECT * FRO... tab_employee" />
-            <marker date="1526564262005" expanded="true" signature="410:623" ph="SELECT * FRO... tab_employee" />
-            <marker date="1526564262005" expanded="true" signature="410:695" ph="SELECT * FRO... tab_employee" />
-            <marker date="1526564262005" expanded="true" signature="410:726" ph="SELECT * FRO... tab_employee" />
-            <marker date="1526564262005" expanded="true" signature="952:978" ph="SELECT * FRO... tab_employee" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ifox/hgx/mybatis/test/TestMapperDynamicSQL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="39" column="75" lean-forward="false" selection-start-line="39" selection-start-column="75" selection-end-line="39" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1526871741409" expanded="true" signature="410:436" ph="SELECT * FRO... tab_employee" />
+            <marker date="1526871741409" expanded="true" signature="1587:1614" ph="SELECT * FRO... tab_employee" />
           </folding>
         </state>
       </provider>
@@ -1045,7 +1056,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.5027574" />
               </list>
             </option>
           </splitter-proportions>
