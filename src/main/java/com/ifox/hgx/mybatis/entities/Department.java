@@ -1,8 +1,9 @@
 package com.ifox.hgx.mybatis.entities;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Department {
+public class Department implements Serializable {
     private Integer id ;
     private String deptName ;
 

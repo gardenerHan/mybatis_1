@@ -216,4 +216,19 @@ public class MyBatisTest {
         }
     }
 
+    @Test
+    public void testSecondCache(){
+        SqlSession openSession = sqlSessionFactory.openSession(true) ;
+        SqlSession openSession2 = sqlSessionFactory.openSession(true) ;
+        try {
+           EmployeeMapper employeeMapper = openSession.getMapper(EmployeeMapper.class) ;
+           EmployeeMapper employeeMapper1 = openSession2.getMapper(EmployeeMapper.class) ;
+            System.out.println(employeeMapper.getEmpById(1)) ;
+            openSession.close();
+            System.out.println(employeeMapper1.getEmpById(1)) ;
+        }finally {
+            openSession2.close();
+        }
+    }
+
 }

@@ -1,6 +1,10 @@
 package com.ifox.hgx.mybatis.entities;
 
-public class Employee {
+import java.io.Serializable;
+
+
+//开启二级缓存需要实现序列化接口
+public class Employee implements Serializable {
     private Integer id;
     private String lastName;
     private String email;
@@ -8,7 +12,7 @@ public class Employee {
 
     private Department dept ;
 
-    public Employee() {
+    public Employee(){
     }
 
     public Employee(String lastName, String email, String gender) {
