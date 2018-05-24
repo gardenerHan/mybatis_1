@@ -28,4 +28,6 @@ public interface EmployeeMapper {
     //多条封装map,主键为id，值为javaBean
     @MapKey("id")
     Map<Integer,Employee> getEmpByLastNameReturnMap(String lastName ) ;
+
+    List<Employee> getAll() ;
 }

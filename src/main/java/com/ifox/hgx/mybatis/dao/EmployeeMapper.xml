@@ -54,4 +54,8 @@
         SELECT * FROM tab_employee WHERE last_name LIKE #{lastName}
 
     </select>
+
+    <select id="getAll" resultType="Employee">
+        SELECT * FROM tab_employee
+    </select>
 </mapper>

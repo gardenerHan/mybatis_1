@@ -3,6 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+
     <properties resource="dbconfig.properties"></properties>
     <settings>
         <!--开启动驼峰命名规则（camel case）映射-->
@@ -22,9 +23,11 @@
     <typeAliases>
         <!--<typeAlias alias="employee" type="com.ifox.hgx.mybatis.entities.Employee"></typeAlias>-->
         <package name="com.ifox.hgx.mybatis.entities"></package>
-
-
     </typeAliases>
+
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageInterceptor"></plugin>
+    </plugins>
 
     <environments default="development">
         <environment id="development">
